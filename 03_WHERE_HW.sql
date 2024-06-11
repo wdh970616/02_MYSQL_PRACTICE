@@ -62,11 +62,11 @@ from employee
 where email is not null;
 
 -- 추가문제
-select emp_name,
-       dept_title,
-       salary
-from employee,
-     department
+select a.emp_name,
+       b.dept_title,
+       a.salary
+from employee a,
+     department b
 where dept_code in ('D6', 'D8');
 
 select emp_id,
